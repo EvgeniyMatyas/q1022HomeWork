@@ -16,9 +16,13 @@ public enum USER {
         this.lastName = lastName;
         this.age = age;
         this.gender = gender;
+        this.adress = adress;
     }
     public void printNameLastName(){
         System.out.println(name+" "+lastName);
+    }
+    USER(){
+        System.out.println("Empty constructor");
     }
     public int upAge(int plusAge){
         age = plusAge+age;
@@ -26,7 +30,7 @@ public enum USER {
     }
     public void printUserInfo(){
         System.out.println(name+" "+lastName+" "+age+" "+gender);
-        adress.printUserAdress();
+
     }
 
     public String getName() {
@@ -60,15 +64,17 @@ public enum USER {
     public void setGender(char gender) {
         this.gender = gender;
     }
-    public static class UserAdress{
-         private String country;
-         private String city;
-    public UserAdress(String country,String city){
-        this.country = country;
-        this.city = city;
-    }
-    public void printUserAdress(){
-            System.out.println(country+" "+city);
+    public static class UserAdress {
+        private String country;
+        private String city;
+
+        public UserAdress(String country, String city) {
+            this.country = country;
+            this.city = city;
         }
-    }
-}
+
+        public void printAdress() {
+            System.out.println(country + " " + city);
+
+        }
+    }}
