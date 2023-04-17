@@ -1,22 +1,22 @@
 package homeWork3.user;
 
 public enum USER {
-    USER1("PETR", "PETROV", 30, 'M',new UserAdress("RB","MINSK")),
-    USER2("IVAN", "IVANOV", 25, 'M',new UserAdress("UA","KIEV")),
-    USER3("IRINA", "SIDOROVA", 29, 'F',new UserAdress("RU","MOSCOW"));
+    USER1("PETR", "PETROV", 30, 'M',new UserAddress("RB","MINSK")),
+    USER2("IVAN", "IVANOV", 25, 'M',new UserAddress("UA","KIEV")),
+    USER3("IRINA", "SIDOROVA", 29, 'F',new UserAddress("RU","MOSCOW"));
 
     private String name;
     private String lastName;
     private int age;
     private char gender;
-    private UserAdress adress;
+    private UserAddress address;
 
-     USER(String name, String lastName, int age, char gender,UserAdress adress) {
+     USER(String name, String lastName, int age, char gender,UserAddress address) {
         this.name = name;
         this.lastName = lastName;
         this.age = age;
         this.gender = gender;
-        this.adress = adress;
+        this.address = address;
     }
     public void printNameLastName(){
         System.out.println(name+" "+lastName);
@@ -30,7 +30,7 @@ public enum USER {
     }
     public void printUserInfo(){
         System.out.println(name+" "+lastName+" "+age+" "+gender);
-
+        address.printAddress();
     }
 
     public String getName() {
@@ -64,17 +64,18 @@ public enum USER {
     public void setGender(char gender) {
         this.gender = gender;
     }
-    public static class UserAdress {
+    public static class UserAddress {
         private String country;
         private String city;
 
-        public UserAdress(String country, String city) {
+        public UserAddress(String country, String city) {
             this.country = country;
             this.city = city;
         }
 
-        public void printAdress() {
+        public void printAddress() {
             System.out.println(country + " " + city);
 
         }
+
     }}
