@@ -1,4 +1,4 @@
-package homeWork5.company;
+package homeWork4.company;
 
 public class Janitor extends Worker {
     @Override
