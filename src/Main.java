@@ -65,30 +65,28 @@ public class Main {
 //        user.printUserInfo();
 //
 //
-        Employee worker1 = new Worker("Андрей","Иванов",1);
-        Employee worker2 = new Worker("Алексей","Петров",2);
-        Employee worker3 = new Worker("Дмитрий","Сидоров",3);
-        Employee worker4 = new Worker("Ольга","Антонова",4);
-        Employee intern1 = new Intern("Оксана","Фролова",1);
-        Employee janitor1 = new Janitor("Антон","Давыдов",2);
-
-        Director director1 = new Director("Сергей","Дмитриев",1);
-        Director director2= new Director("Анна","Васильева",2);
-
-
-        director1.addWorker(worker1);
-        director1.addWorker(worker2);
-        director1.addWorker(worker3);
-
-        director2.addWorker(worker4);
-
-        director1.addWorker(director2);
-
-        worker1.addWorker(director2);
-        System.out.println(worker1);
-        System.out.println(janitor1.getSalary());
-
-
+//        Employee worker1 = new Worker("Андрей","Иванов",1);
+//        Employee worker2 = new Worker("Алексей","Петров",2);
+//        Employee worker3 = new Worker("Дмитрий","Сидоров",3);
+//        Employee worker4 = new Worker("Ольга","Антонова",4);
+//        Employee intern1 = new Intern("Оксана","Фролова",1);
+//        Employee janitor1 = new Janitor("Антон","Давыдов",2);
+//
+//        Director director1 = new Director("Сергей","Дмитриев",1);
+//        Director director2= new Director("Анна","Васильева",2);
+//
+//
+//        director1.addWorker(worker1);
+//        director1.addWorker(worker2);
+//        director1.addWorker(worker3);
+//
+//        director2.addWorker(worker4);
+//
+//        director1.addWorker(director2);
+//
+//        worker1.addWorker(director2);
+//        System.out.println(worker1);
+//        System.out.println(janitor1.getSalary());
     }
 }
 
