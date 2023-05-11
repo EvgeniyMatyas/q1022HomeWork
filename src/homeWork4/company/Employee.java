@@ -8,6 +8,11 @@ public abstract class Employee extends Person {
     protected PROF prof;
     private final int basic = 1000;
     Employee[] employees;
+
+    public Employee[] getEmployees() {
+        return employees;
+    }
+
     public void addWorker(Employee employee){
         if (employees == null){
             employees = new Employee[1];

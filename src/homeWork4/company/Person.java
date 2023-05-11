@@ -9,6 +9,10 @@ public class Person {
         this.secondName=secondName;
     }
 
+    public String getName() {
+        return name;
+    }
+
     @Override
     public String toString() {
         return "Person{" +

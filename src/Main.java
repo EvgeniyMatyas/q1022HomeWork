@@ -1,5 +1,5 @@
 import homeWork4.company.*;
-import homeWork5.company.*;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -74,19 +74,26 @@ public class Main {
 //
 //        Director director1 = new Director("Сергей","Дмитриев",1);
 //        Director director2= new Director("Анна","Васильева",2);
-//
-//
+
+
 //        director1.addWorker(worker1);
 //        director1.addWorker(worker2);
 //        director1.addWorker(worker3);
-//
+
 //        director2.addWorker(worker4);
-//
+
 //        director1.addWorker(director2);
-//
+//        worker1.addWorker(intern1);
+
 //        worker1.addWorker(director2);
 //        System.out.println(worker1);
 //        System.out.println(janitor1.getSalary());
+
+//        Service service = new Service();
+//        System.out.println(service.find(director1,"Андрей"));
+//        System.out.println(service.find(director1,"Вениамин"));
+//        System.out.println(service.find(director2,"Ольга"));
+//        System.out.println(service.find(worker1,"Оксана"));
     }
 }
 
