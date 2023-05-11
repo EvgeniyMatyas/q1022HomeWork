@@ -15,10 +15,6 @@ public class Director extends Employee {
 
         this.prof = PROF.DIRECTOR;
     }
-
-
-
-
     @Override
     public int getSalary() {
        if(employees==null){ return super.getSalary();
