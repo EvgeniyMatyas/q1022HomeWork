@@ -1,4 +1,5 @@
 import homeWork4.company.*;
+import homeWork5.exeption.MyMemory;
 
 
 public class Main {
@@ -94,6 +95,10 @@ public class Main {
 //        System.out.println(service.find(director1,"Вениамин"));
 //        System.out.println(service.find(director2,"Ольга"));
 //        System.out.println(service.find(worker1,"Оксана"));
+
+
+          MyMemory myMemory=new MyMemory();
+          myMemory.memory();
     }
 }
 
